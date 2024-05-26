@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="test-login.css">
+    <title>Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fffdf3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-box">
+        <h1><img src="judul-header.png" class="header-image" width="200" height="50"></h1>
+    </div>
+    <div class="login-box">
+        <h2 class="my-h2">Masuk ke Akun</h2>
+        <h3 class="my-h3">Yuk, lanjutin belajarmu di videobelajar.</h3>
+        <form action="/login" method="POST">
+            <div class="container">
+                <div class="column">
+                    <label for="username" class="left-align">E-mail:</label>
+                    <input type="text" name="username" id="username">
+                </div>
+                <div class="column">
+                    <label for="password" class="left-align">Kata Sandi:</label>
+                    <input type="password" name="password" id="password">
+                </div>
+            </div>
+            <p>
+                <a href="#">Lupa Password?</a>
+            </p>
+            <button type="submit">Masuk</button>
+        </form>
+        <div></div>
+        <a href="test-register.html"><button>Daftar</button></a>
+        <div></div>
+        <a class="atau">Atau</a>
+        <div></div>
+        <a href="#"><img src="login-google.png" class="google"></img></a>
+    </div>
+</body>
+</html>

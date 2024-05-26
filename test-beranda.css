@@ -1,0 +1,227 @@
+.header-image {
+    margin-right: 20px;
+    margin-left: 30px;
+    transform: translateY(-20px);
+}
+.profilepic {
+    position: absolute;
+    margin: 10px 15px;
+    top: 0;
+    right: 0;
+}
+.header-box {
+    background-color: white;
+    padding: 2px;
+    border-radius: 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    text-align: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 50px;
+}
+.judul-beranda {
+    background-image: url('banner1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 50px;
+    margin: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+.sub-judul-beranda {
+    -webkit-text-stroke-width: 0.8px;
+    font-size: 21px;
+    position: relative;
+    top: -10px;
+}
+.nav {
+    overflow: hidden;
+    position: absolute;
+    top: 190px;
+    margin: 10px;
+}
+.nav a {
+    color: #2c2a2a;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    position: flex;
+}
+main.cards {
+    display: flex;
+    position: relative;
+    top: 30px;
+    padding: 32px;
+}
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 468px;
+    margin-left: 32px;
+}
+main.cards section.card:first-child {
+    margin-left: 0;
+}
+main.cards section.card .icon {
+    width: 200px;
+}
+main.cards section.card img {
+    width: 100%;
+}
+main.cards section.card h3 {
+    font-size: 100%;
+    margin: 16px 0;
+}
+
+main.cards section.card span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+
+main.cards section.card button {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 16px 0;
+}
+main.cards section.card.contact {
+    box-shadow: 20px 20px 50px -30px #DBC4FF;
+}
+main.cards section.card.shop {
+    box-shadow: 20px 20px 50px -30px #AFD6FF;
+}
+main.cards section.card.about {
+    box-shadow: 20px 20px 50px -30px #FFC1D5;
+}
+.subs {
+    display: flex;
+    position: relative;
+    top: 30px;
+}
+.left-align {
+    display: inline-block;
+    text-align: left;
+    margin-right: auto;
+}
+.my-h2 {
+    position: relative;
+    top: -20px;
+}
+.my-h3 {
+    font-size: 16px;
+    color: darkgrey;
+    position: relative;
+    top: -40px;
+}
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 8px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 130px;
+    max-width: 100%;
+}
+.atau {
+    line-height: 2.0;
+}
+.google {
+    width: 180px;
+    height: 35px;
+    max-width: 100%;
+    max-height: 80%;
+}
+.footer-content {
+    display: flex;
+    position: absolute;
+    width: 700px;
+    margin-bottom: 30px;
+    bottom: -10;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    margin: 10px;
+}
+.footer-bottom {
+    display: flex;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    margin: 5px;
+}
+@media screen and (max-width: 720px) {
+    main.cards {
+        flex-direction: column;
+        position: relative;
+        top: 430px;
+    }
+    main.cards section.card {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+    main.cards section.card:last-child {
+        margin-bottom: 0;
+    }
+    main.cards section.card button {
+        font-size: 70%;
+    }
+    .nav {
+        overflow: hidden;
+        position: absolute;
+        top: 340px;
+        margin: 10px;
+    }
+    .subs {
+        display: flex;
+        position: relative;
+        top: 430px;
+    }
+    .footer-content {
+        font-size: 15px;
+        display: flex;
+        position: absolute;
+        width: 370px;
+        margin-bottom: 30px;
+        bottom: -750px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px;
+        margin: 10px;
+    }
+    .footer-bottom {
+        display: flex;
+        position: absolute;
+        bottom: -800px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 5px;
+        margin: 5px;
+    }
+}
